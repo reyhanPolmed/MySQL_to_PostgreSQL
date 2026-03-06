@@ -680,5 +680,10 @@ class MySQLToPostgresConverter {
     }
 }
 
-// Export for use in app.js
-window.MySQLToPostgresConverter = MySQLToPostgresConverter;
+// Export for universal use (Browser & Node.js)
+if (typeof window !== 'undefined') {
+    window.MySQLToPostgresConverter = MySQLToPostgresConverter;
+}
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = MySQLToPostgresConverter;
+}

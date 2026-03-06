@@ -1,0 +1,22 @@
+{
+  "name": "mysql-to-postgres",
+  "version": "1.0.0",
+  "description": "Convert MySQL SQL dump files to PostgreSQL format, completely locally.",
+  "main": "converter.js",
+  "scripts": {
+    "start": "node server.js",
+    "cli": "node cli.js"
+  },
+  "bin": {
+    "mysql-to-postgres": "./cli.js"
+  },
+  "keywords": [
+    "mysql",
+    "postgreSQL",
+    "converter",
+    "sql",
+    "database"
+  ],
+  "author": "",
+  "license": "MIT"
+}
