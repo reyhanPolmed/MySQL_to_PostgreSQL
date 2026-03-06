@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  sql-migrator:
+    build: .
+    container_name: sql-migrator
+    ports:
+      # Map the host's public Port 80 directly to the Docker container's Port 8080
+      - "80:8080"
+    restart: unless-stopped
+    environment:
+      - PORT=8080
